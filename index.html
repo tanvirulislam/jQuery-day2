@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>jQuery Day 02</title>
+
+    <style>
+        .red {
+
+            background: #fffdf8;
+
+            border: 1px solid red;
+
+            padding: 5px 10px;
+
+            margin: 0px 5px;
+
+            color: black;
+
+            font-size: 12px;
+
+        }
+
+        .orange {
+
+            background: #fff791;
+
+            border: 1px solid red;
+
+            padding: 5px 10px;
+
+            margin: 0px 5px;
+
+            color: black;
+
+            font-size: 12px;
+
+        }
+
+        .green {
+
+            background: #ccffcc;
+
+            border: 1px solid red;
+
+            padding: 5px 10px;
+
+            margin: 0px 5px;
+
+            color: black;
+
+            font-size: 12px;
+        }
+
+
+
+        #bg {
+
+            height: 200px;
+
+            width: 500px;
+
+            background: maroon;
+
+            padding: 30px;
+
+            color: oldlace;
+
+        }
+    </style>
+
+
+
+
+</head>
+
+<body style="width: 80%; margin: 20px auto;">
+
+    <div class="row">
+
+        <h1 class="text-center text-danger well well-sm">jQuery click double click hide show event</h1> <br>
+
+        <div class="text-center">
+
+            <input type="button" class="btn btn-primary btn-sm " id="popup" value="Popup Window :: Google">
+
+            <input type="button" class="btn btn-primary btn-sm " id="hide" value="Hide">
+
+            <input type="button" class="btn btn-primary btn-sm " id="all" value="Show all">
+
+            <input type="button" class="btn btn-primary btn-sm " id="wds" value="Web Design">
+
+            <input type="button" class="btn btn-primary btn-sm " id="wdv" value="Web Development">
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="row">
+
+        <div class="interior">
+
+            <div class="col-md-4 col-xs-12 col-sm-4">
+
+                <div class="thumbnail">
+
+                    <img src="images/slider1.jpeg" class="img-fluid">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="webdesign">
+
+            <div class="col-md-4 col-xs-12 col-sm-4">
+
+                <div class="thumbnail">
+
+                    <img src="images/slider2.jpeg" class="img-fluid">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="webdev">
+
+            <div class="col-md-4 col-xs-12 col-sm-4">
+
+                <div class="thumbnail">
+
+                    <img src="images/slider3.jpeg" class="img-fluid">
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--    ---------------------------------->
+    <br>
+    <br>
+    <div class="row">
+
+        <h1 class="text-center text-danger well well-sm">jQuery Mouse events with pop up window show hide</h1>
+
+
+
+    </div>
+    <br>
+    <div class="row">
+
+        <div class="interiorMouse">
+
+            <div class="col-xs-12 col-sm-4">
+
+                <div class="thumbnail">
+
+                    <img src="images/slider1.jpeg" class="img-fluid">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="webdesignMouse">
+
+            <div class="col-xs-12 col-sm-4">
+
+                <div class="thumbnail">
+
+                    <img src="images/slider2.jpeg" class="img-fluid">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="webdevMouse">
+
+            <div class="col-xs-12 col-sm-4">
+
+                <div class="thumbnail">
+
+                    <img src="images/slider3.jpeg" class="img-fluid">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--    -------------------------------------------->
+    <br>
+    <br>
+
+    <h1 class="text-center text-danger">Key up, Key down, Focus in, Focus out</h1>
+    <form>
+
+        <div class="form-group">
+
+            <label for="fullName"> Name </label>
+
+            <input type="text" placeholder="Type your full name" name="fullName" class="form-control">
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="password"> Password </label>
+
+            <input type="password" placeholder="Type password" name="password" class="form-control">
+
+        </div>
+
+    </form>
+
+    <!--    --------------------------------------------->
+    <label for="password">Password </label>
+
+    <input type="password" id="password" placeholder=" Enter your password">
+
+    <span class="pass_strength"></span>
+
+
+    <!---------------------------------------->
+
+    <br>
+    <br>
+    <select name="background_color" id="bgcolor">
+
+    <option value="white">White</option>
+
+    <option value="black">Black</option>
+
+    <option value="orange">Orange</option>
+
+    <option value="darkgreen">Green</option>
+
+    <option value="red">Red</option>
+
+    <option value="maroon">Maroon</option>
+
+    </select>
+
+    <br>
+    <br>
+    <!--    --------------------------->
+
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-12">
+
+            <input type="button" class="btn btn-danger" value="Start" id="srt">
+
+            <input type="button" class="btn btn-danger" value="Stop" id="stp">
+
+        </div><br><br>
+
+        <div class="col-xs-12 col-sm-4">
+
+            <div id="bg">
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--------------------------------->
+    <br>
+    <br>
+    <textarea placeholder="Type your message" rows="5" name="message" maxlength="100" class="form-control"></textarea>
+
+    <p id="character_remaining"></p>
+    <!---------------------------------------->
+    <br>
+    <br>
+    <button class="btn btn-danger" id="hideshow">Toggle with Hide &amp; Show</button> <br>
+
+    <img src="images/slider1.jpeg" class="img-fluid" alt="seo" id="toggle">
+    <!------------------------------------>
+    <div class="col-md-12">
+        <br>
+        <button class="btn btn-danger" id="up">Slide Up</button>
+        <button class="btn btn-danger" id="down">Slide Down</button> <br>
+
+
+        <div class="well well-lg" id="slide1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam totam animi repellendus saepe quisquam obcaecati at laudantium hic? Soluta, doloribus.</p>
+        </div>
+        <br>
+
+    </div>
+
+    <div class="col-md-12">
+        <br>
+        <button class="btn btn-danger" id="slide_toggle">Slide Toggle</button> <br>
+
+        <div class="well well-lg" id="slide2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum nostrum, praesentium accusantium accusamus tempore eos pariatur? Aliquam alias, dolorum provident!.</p>
+        </div>
+
+    </div>
+    <!--    --------------------->
+
+    <div class="row">
+
+        <div class="col-md-3">
+
+            <div class="thumbnail"><img src="images/slider1.jpeg" class="img-fluid gallery_fade"></div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="thumbnail"><img src="images/slider2.jpeg" class="img-fluid gallery_fade"></div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="thumbnail"><img src="images/slider1.jpeg" class="img-fluid gallery_fade"></div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="thumbnail"><img src="images/slider3.jpeg" class="img-fluid gallery_fade"></div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--SCRIPT START---------------------------->
+
+    <script>
+        $(document).ready(function() {
+
+            $("#popup").click(function() {
+
+                window.open("http://youtube.com",
+                    "_blank", "height=400, width=400");
+
+            });
+
+            $("#hide").click(function() {
+
+                $(".interior").hide(500);
+
+                $(".webdev").hide(500);
+
+                $(".webdesign").hide(500);
+
+            });
+
+            $("#all").click(function() {
+
+                $(".interior").show(500);
+
+                $(".webdesign").show(500);
+
+                $(".webdev").show(500);
+
+            });
+
+            $("#wds").dblclick(function() {
+
+                $(".interior").hide(500);
+
+                $(".webdev").hide(500);
+
+                $(".webdesign").show(500);
+
+            });
+
+            $("#wdv").dblclick(function() {
+
+                $(".interior").hide(500);
+
+                $(".webdesign").hide(500);
+
+                $(".webdev").show(500);
+
+            });
+
+            $(".interiorMouse").mouseenter(function() {
+                $(this).hide(2000);
+            });
+
+            $(".webdesignMouse").mousemove(function() {
+                $(this).hide(2000);
+            });
+
+            $(".webdevMouse").mousedown(function() {
+                $(this).hide(2000);
+            });
+
+
+            $(":input:text").keyup(function() {
+                //                alert("keyup");
+            });
+
+            $(":input:password").keydown(function() {
+                //                alert("keydown");
+            });
+
+
+
+
+            $("#password").keyup(function() {
+
+                var count = $(this).val().length;
+
+                $(".pass_strength").text(count);
+
+                if (count < 1) {
+                    $(".pass_strength").text("");
+                    $(".pass_strength").removeClass("red");
+                    $(".pass_strength").removeClass("orange");
+                    $(".pass_strength").removeClass("green");
+
+                } else if (count < 6) {
+
+                    $(".pass_strength").text("Weak");
+                    $(".pass_strength").addClass("red");
+                    $(".pass_strength").removeClass("orange");
+                    $(".pass_strength").removeClass("green");
+
+                } else if (count <= 10) {
+                    $(".pass_strength").text("Good");
+                    $(".pass_strength").addClass("orange");
+                    $(".pass_strength").removeClass("red");
+                    $(".pass_strength").removeClass("green");
+
+                } else {
+                    $(".pass_strength").text("Strong");
+                    $(".pass_strength").addClass("green");
+                    $(".pass_strength").removeClass("red");
+                    $(".pass_strength").removeClass("orange");
+
+                }
+
+            });
+
+
+
+            var color = $("#bgcolor").val();
+
+            $("body").css("background", color);
+
+            $("#bgcolor").change(function() {
+
+                color = $("#bgcolor").val();
+
+                $("body").css("background", color);
+
+            });
+
+
+
+            $("#srt").click(function() {
+
+                $("#bg").text("This will be hide in a moment ");
+
+                $("#bg").bind("mouseover", function() {
+
+                    $(this).hide(4000);
+
+                });
+
+            });
+
+            $("#stp").click(function() {
+
+                $("#bg").unbind("mouseover");
+
+                $("#bg").text("This will not hide");
+
+            });
+
+
+
+            var max_text = 100;
+
+            $("#character_remaining").html("<b>" + max_text + " characters remaining.</b>");
+
+            $("textarea").keyup(function() {
+
+                var text_length = $("textarea").val().length;
+
+                var total_character_remaining = max_text - text_length;
+
+                $("#character_remaining").html("<b>" + total_character_remaining + " characters remaining.</b>");
+
+            });
+
+
+            $("#hideshow").click(function() {
+
+                $("#toggle").toggle(2000);
+
+            });
+
+
+            $("#up").click(function() {
+
+                $("#slide1").slideUp(1000);
+
+            });
+
+            $("#down").click(function() {
+
+                $("#slide1").slideDown(1000);
+
+            });
+
+            $("#slide_toggle").click(function() {
+
+                $("#slide2").slideToggle(1000);
+
+            });
+
+
+            $(".gallery_fade").css("opacity", "0.5");
+
+            $(".gallery_fade").mouseover(function() {
+
+                $(this).fadeTo(100, 1);
+
+                $(".gallery_fade").not(this).fadeTo(100, 0.5);
+
+            });
+
+
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+    <!--    --------------------------------------->
+
+</body>
+
+</html>
